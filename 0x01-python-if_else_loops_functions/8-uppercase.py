@@ -5,5 +5,3 @@ def uppercase(Ahmed):
             print("{}".format(chr(ord(char) - 32)), end="")
         else :
             print("{}".format(char), end="")
-        if i + 1 == len(Ahmed):
-            print("")
