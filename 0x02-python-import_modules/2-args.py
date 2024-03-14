@@ -5,8 +5,8 @@ if __name__ == "__main__":
         print("{} arguments.".format(0))
     else:
         print("{} {}".format(len(sys.argv) - 1,
-            "argument:" if len(sys.argv) - 1 == 1 else
-                "arguments:"))
+                             "argument:" if len(sys.argv) - 1 == 1
+                             else "arguments:"))
         for i, j in enumerate(sys.argv):
             if i == 0:
                 continue
