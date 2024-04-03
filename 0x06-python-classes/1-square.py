@@ -2,10 +2,13 @@
 """
 Module to define the square class
 """
+
+
 class Square:
     """
     Class Square that defines a square
     """
+
     def __init__(self, size):
         """
         Initializes private attribute size for current instance
