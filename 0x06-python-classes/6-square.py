@@ -24,7 +24,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integer")
         if len(position) > 2 or len(position) < 2:
             raise TypeError("position must be a tuple of 2 positive integer")
-        if not isinstance(position[0], int) or not isinstance(position[1], int):
+        if not isinstance(position[0], int)or not isinstance(position[1], int):
             raise TypeError("position must be a tuple of 2 positive integer")
         if position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integer")
@@ -35,16 +35,16 @@ class Square:
         Returns Current Square Area
         Returns:
             Area: Area Of Current Square
-        """        
+        """
         return self.__size ** 2
 
     @property
     def size(self) -> int:
         """
-        Returns The Size 
+        Returns The Size
         Returns:
             int: Size of Square
-        """        
+        """
         return self.__size
 
     @size.setter
@@ -57,7 +57,7 @@ class Square:
         Raises:
             TypeError: When Argument Passed Not int
             ValueError: When size < 0
-        """        
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -74,7 +74,7 @@ class Square:
             for i in range(self.__position[0]):
                 print(end=' ')
             for i in range(self.__size):
-                print('#',end='')
+                print('#', end='')
             print()
         if self.__size == 0:
             for i in range(self.__position[0]):
@@ -87,7 +87,7 @@ class Square:
         Returns Current Position
         Returns:
             tuple: (x, y)
-        """        
+        """
         return self.__position
 
     @position.setter
@@ -105,4 +105,3 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integer")
         self.__position = value
         self.__position = value
-    
