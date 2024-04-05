@@ -46,8 +46,6 @@ class Square:
                 if j == self.__size - 1:
                     break
                 print()
-        if self.__size == 0:
-            print()
         return ""
 
     def area(self):
