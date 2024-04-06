@@ -69,7 +69,7 @@ class Node:
         Raises:
             TypeError: If Given Object Is Not an Instance Of class Node and not NULL
         """
-        if isinstance(value, Node) and value is not None:
+        if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
