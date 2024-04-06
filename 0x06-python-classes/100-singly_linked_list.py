@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Module To Define Singly LList in increasing order
+"""
 
 
 class Node:
@@ -78,6 +81,11 @@ class SinglyLinkedList:
         self.__head = None
 
     def __str__(self) -> str:
+        """
+        Prints data of a Singly LList
+        Returns:
+            str: ""
+        """
         temp = self.__head
         while temp is not None:
             print(temp.data, end="\n" if temp.next_node is not None else "")
