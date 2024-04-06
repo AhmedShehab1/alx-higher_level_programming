@@ -74,6 +74,10 @@ class Node:
         self.__next_node = value
 
 class SinglyLinkedList:
+    """
+    Defines a Singly Linked List
+    """
+
     def __init__(self) -> None:
         """
         Initializes Head Node
