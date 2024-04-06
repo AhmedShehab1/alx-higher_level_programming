@@ -14,7 +14,8 @@ class Node:
         Initializes Node with data and sets current node's next to next node
         Args:
             data (int): Data to be Assigned to Node
-            next_node (Node, optional): next node reference value. Defaults to None.
+            next_node (Node, optional): next node reference value.
+            Defaults to None.
 
         Raises:
             TypeError: When data in not of type int
@@ -67,11 +68,13 @@ class Node:
         Args:
             value (Node): Sets New Value To Next Node
         Raises:
-            TypeError: If Given Object Is Not an Instance Of class Node and not NULL
+            TypeError: If Given Object Is Not an Instance Of class Node
+            and not NULL
         """
-        if isinstance(value, Node) and value is not None:
+        if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
 
 class SinglyLinkedList:
     """
