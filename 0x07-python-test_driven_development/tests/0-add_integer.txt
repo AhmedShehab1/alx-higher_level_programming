@@ -1,0 +1,13 @@
+>>> add = __import__("0-add_integer").add_integer
+>>> add(4, 5)
+9
+>>> add("Ahmed", 4)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add(4, "2")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> add(-2, -4)
+-6
