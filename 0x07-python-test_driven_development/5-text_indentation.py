@@ -3,7 +3,17 @@
 Module To Manipulate Given String
 """
 
-def text_indentation(text):
+
+def text_indentation(text: str):
+    """
+    function that prints a text with 2 new lines after
+    each of these characters: ., ? and :
+    Args:
+        text (str): Text To Be Indented
+
+    Raises:
+        TypeError: If Given Text Is Not Of Type str
+    """
     start_position = 0
     if type(text) is not str:
         raise TypeError("text must be a string")
@@ -13,7 +23,7 @@ def text_indentation(text):
             try:
                 while text[char_no + 1] == ' ':
                     char_no += 1
-            except:
+            except Exception:
                 pass
             else:
                 start_position = char_no + 1
