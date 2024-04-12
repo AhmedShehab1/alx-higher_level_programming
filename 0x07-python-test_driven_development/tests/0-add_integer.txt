@@ -11,3 +11,11 @@ Traceback (most recent call last):
 TypeError: b must be an integer
 >>> add(-2, -4)
 -6
+>>> add(-2)
+96
+>>> add()
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+>>> add(2.30, 3.50)
+5
