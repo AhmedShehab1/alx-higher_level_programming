@@ -2,6 +2,8 @@
 """
 Module For Addition Of Integers
 """
+
+
 def add_integer(a, b=98) -> int:
     """
     Function That Adds Two Integers
@@ -16,9 +18,13 @@ def add_integer(a, b=98) -> int:
     Returns:
         int: Sum of a and b
     """
-    if type(a) is not float and type(a) is not int:
+    if a != a:
+        a = 89
+    if b != b:
+        b = 89
+    if a is None or (type(a) not in [float, int]):
         raise TypeError("a must be an integer")
-    if type(b) is not float and type(b) is not int:
+    if type(b) not in [float, int]:
         raise TypeError("b must be an integer")
     a, b = map(int, [a, b])
     return a + b
