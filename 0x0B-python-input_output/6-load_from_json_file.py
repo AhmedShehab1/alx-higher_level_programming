@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import json
 """
 Module For JSON Files Encoding
 """
+import json
 
 
 def load_from_json_file(filename):
