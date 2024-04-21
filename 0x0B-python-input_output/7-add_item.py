@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import sys
-save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 """
 Module For JSON Encoding
 """
+import sys
+save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
+load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 
 cmd_line_arguments = sys.argv[1:]
 try:
