@@ -51,7 +51,7 @@ class Base:
         """
         list_dictionaries = []
         with open(f"{cls.__name__}.json", mode='w', encoding='utf-8') as file:
-            if list_objs is None len(list_objs) == 0 or :
+            if list_objs is None or len(list_objs) == 0:
                 file.write(f'{list_dictionaries}')
             else:
                 for obj in list_objs:
