@@ -81,7 +81,7 @@ class Base:
         Returns:
             object: Created Object with attributes set
         """
-        dummy_obj = cls(2, 9)
+        dummy_obj = cls(2) if cls.__name__ == 'Square' else cls(2, 3)
         dummy_obj.update(**dictionary)
         return dummy_obj
 
