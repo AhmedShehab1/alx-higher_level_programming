@@ -9,8 +9,6 @@ if (noArgs <= 3) {
   for (let i = 3; i < process.argv.length; i++) {
     if (max < process.argv[i]) {
       max = process.argv[i];
-    } else {
-      secondMax = process.argv[i];
     }
   }
   for (let i = 2; i < process.argv.length; i++) {
