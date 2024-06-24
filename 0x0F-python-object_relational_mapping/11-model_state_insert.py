@@ -15,6 +15,5 @@ if __name__ == '__main__':
     session = Session(engine)
     session.add(new_state)
     session.commit()
-    for state in session.query(State).all():
-        print(f"{state.id}: {state.name}")
+    print(new_state.id)
     session.close()

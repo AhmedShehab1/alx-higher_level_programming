@@ -19,6 +19,7 @@ if __name__ == '__main__':
     result_set = cur.fetchall()
     for city in result_set:
         print(city[0], end=", " if result_set.index(city)
-              != len(result_set) - 1 else '\n')
+              != len(result_set) - 1 else '')
+    print('')
     cur.close()
     conn.close()
