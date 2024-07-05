@@ -19,7 +19,7 @@ if __name__ == '__main__':
     except Exception:
         print("Not a valid JSON")
     else:
-        if response.get("id") is None:
+        if not response:
             print("No result")
         else:
             print("[{}] {}".format(response.get("id"),
