@@ -13,7 +13,7 @@ if __name__ == '__main__':
         letter = ""
 
     response = requests.post("http://0.0.0.0:5000/search_user",
-                             params={"q": letter})
+                             data={"q": letter})
     try:
         response = response.json()
     except Exception:
