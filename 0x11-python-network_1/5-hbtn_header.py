@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 '''
-Script sends a pOST request to a given URL and shows the response's body
+Script that sends a request to a given URL
+and displays the  the value of the variable X-Request-Id
+in the response header
 '''
 import requests
 import sys
 if __name__ == '__main__':
-    response = requests.post(sys.argv[1], data={'email': sys.argv[2]})
-    print(response.text)
+    response = requests.get(sys.argv[1])
+    print(response.headers.get('X-Request-Id'))

@@ -4,7 +4,6 @@ Script that fetches https://alx-intranet.hbtn.io/status
 Outputing the body of the response
 '''
 import requests
-import sys
 if __name__ == '__main__':
     response = requests.get('https://alx-intranet.hbtn.io/status')
     print("Body response:")
