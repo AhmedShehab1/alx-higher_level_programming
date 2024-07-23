@@ -9,7 +9,7 @@ import requests
 
 if __name__ == "__main__":
     headers = {"Accept": "application/vnd.github+json"}
-    url = f"https://api.github.com/repos/{sys.argv[1]}/{sys.argv[2]}/commits"
+    url = f"https://api.github.com/repos/{sys.argv[2]}/{sys.argv[1]}/commits"
 
     response = requests.get(url, headers=headers)
 
