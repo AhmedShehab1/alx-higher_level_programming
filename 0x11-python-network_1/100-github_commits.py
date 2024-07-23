@@ -15,9 +15,7 @@ if __name__ == "__main__":
 
     if response:
         response = response.json()
-        for i, result in enumerate(response):
+        for result in response[:10]:
             print(f"{result.get('sha')}: {result['commit']['author']['name']}")
-            if (i == 9):
-                break
     else:
         raise Exception(f"error: {response.status_code}")
