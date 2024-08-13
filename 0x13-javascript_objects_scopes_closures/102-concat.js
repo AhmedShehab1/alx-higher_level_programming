@@ -15,7 +15,7 @@ fs.readFile(file1, 'utf-8', (err, data1) => {
       console.error(err);
       return;
     }
-    const data = data1 + '\n' + data2;
+    const data = data1 + data2;
     fs.writeFile(destFile, data, 'utf-8', (err) => {
       if (err) {
         console.error(err);
