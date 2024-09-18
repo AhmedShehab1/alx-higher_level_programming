@@ -1,6 +1,4 @@
--- Changing character set and collation for hbtn_0c_0 db
-ALTER DATABASE hbtn_0c_0 COLLATE utf8mb4_unicode_ci;
-
+-- Changing character set and collation.
 USE hbtn_0c_0;
 
 ALTER TABLE first_table  COLLATE utf8mb4_unicode_ci;
